@@ -8,10 +8,10 @@
 >I am 29 years old, I work as an engineer in a government agency. I fell in love with development for its combination of mathematical precision and creative approach. I really need an activity where I can develop throughout my life and become a professional in my field, working together with motivated and smart people
 
 ### Soft skills:
-- [X] high efficiency; 
-- [X] responsibility; 
-- [X] result orientation;
-- [X] team work.
+- [X] High efficiency; 
+- [X] Responsibility; 
+- [X] Result orientation;
+- [X] Team work.
 
 # Skills
 * HTML, Markdown
