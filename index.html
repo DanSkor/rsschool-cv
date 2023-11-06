@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniil Skorokhod: CV</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+  <main class="main">
+    <div class="main__container">
+      <div class="main__left-column">
+        <section class="main__presentation">
+          <img class="photo" src="./images/photo.jpg" width="220" height="220" alt="Daniils photo.">
+          <h1 class="main__title">Daniil Skorokhod</h1>
+          <p class="main__desc">Junior Frontend Developer</p>
+        </section>
+        <section class="mainn__contacts">
+          <h2 class="left-title contacts-title">Contacts</h2>
+          <ul class="contacts-list">
+            <li class="contacts-item">Telegram:
+              <a class="contacts-item__link" href="https://t.me/sda_777">sda_777</a>
+            </li>
+            <li class="contacts-item">GitHub:
+              <a class="contacts-item__link" href="https://github.com/DanSkor">DanSkor</a>
+            </li>
+            <li class="contacts-item">E-mail:
+              <a class="contacts-item__link" href="mailto:skorokhodd@yandex.ru">skorokhodd@yandex.ru</a>
+            </li>
+          </ul>
+        </section>
+        <section class="main__skills">
+          <h2 class="left-title skills-title">Skills</h2>
+          <ul class="skills-list">
+            <li class="skills-item">HTML, Markdown</li>
+            <li class="skills-item">CSS (BEM)</li>
+            <li class="skills-item">JavaScript (Fundamentals)</li>
+            <li class="skills-item">Git/GitHub</li>
+          </ul>
+        </section>
+        <section class="main__languages">
+          <h2 class="left-title languages-title">Languages</h2>
+          <ul class="languages-list">
+            <li class="languages-item">
+              <b>Russian</b> - native speaker
+            </li>
+            <li class="languages-item">
+              <b>English</b> - B1
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="main__right-column">
+        <section class="main__about">
+          <h2 class="right-title about-title">About Me</h2>
+          <p class="about-desc">I am 29 years old, I work as an engineer in a government agency. I fell in
+            love with development for its combination of mathematical precision and creative approach. I really need
+            an activity where I can develop throughout my life and become a professional in my field,
+            working together with motivated and smart people</p>
+        </section>
+        <section class="main__education">
+          <h2 class="right-title education-title">Education</h2>
+          <ul class="education-list">
+            <li class="education-item">HTML Academy</li>
+            <ul class="education-list__inner">
+              <li class="education-item__inner">HTML and CSS: Professional website layout</li>
+              <li class="education-item__inner">HTML and CSS: Adaptive layout and automation (in process)
+              </li>
+            </ul>
+            <li class="education-item">Hexlet</li>
+            <ul class="education-list__inner">
+              <li class="education-item__inner">Introduction to Git, Introduction to Programming, Command
+                Line
+                Basics (free courses)</li>
+            </ul>
+          </ul>
+        </section>
+        <section class="main__code">
+          <h2 class="right-title code-title">Code Examples</h2>
+          <pre class="hljs"
+            style="display: block; overflow-x: auto; background: rgb(47, 48, 67); color: rgb(204, 204, 204); padding: 0.5em;"> <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(204, 153, 204);">function</span> <span class="hljs-title" style="color: rgb(102, 153, 204);">toCamelCase</span><span class="hljs-params" style="color: rgb(249, 145, 87);">(str)</span>{</span>
+                    let newStr = str.replace(/_/g, <span class="hljs-string" style="color: rgb(153, 204, 153);">'-'</span>);
+                    let arr = newStr.split(<span class="hljs-string" style="color: rgb(153, 204, 153);">'-'</span>);
+                    <span class="hljs-keyword" style="color: rgb(204, 153, 204);">for</span> (let <span class="hljs-built_in" style="color: rgb(249, 145, 87);">i</span>=<span class="hljs-number" style="color: rgb(249, 145, 87);">1</span>; <span class="hljs-built_in" style="color: rgb(249, 145, 87);">i</span>&amp;lt;arr.<span class="hljs-built_in" style="color: rgb(249, 145, 87);">length</span>; <span class="hljs-built_in" style="color: rgb(249, 145, 87);">i</span>++) {
+                      arr[i] = arr[i][<span class="hljs-number" style="color: rgb(249, 145, 87);">0</span>].toUpperCase() + arr[i].slice(<span class="hljs-number" style="color: rgb(249, 145, 87);">1</span>);
+                    }
+                    <span class="hljs-keyword" style="color: rgb(204, 153, 204);">return</span> arr.join(<span class="hljs-string" style="color: rgb(153, 204, 153);">''</span>);
+                  }</pre>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <a class="footer__github" href="https://github.com/DanSkor">Visit my GitHub</a>
+      <span class="footer__copyright">© 2023</span>
+      <a class="footer__rs-logo__link" href="https://rs.school/">
+        <img class="footer__rs-logo__img" src="./images/rs-logo.svg" alt="RS-school logo." width="126" height="46">
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
