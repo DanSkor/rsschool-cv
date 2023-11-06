@@ -66,5 +66,245 @@ img {
 }
 
 .main__left-column {
-  max-width: 394px;
+  width: 394px;
+}
+
+.main__photo {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.main__title {
+  color: #343434;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+}
+
+.main__desc {
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+.sections-wrapper {
+  color: #ffffff;
+  background: linear-gradient(#ffffff 0%, #ffffff 5%, #474867 5%, #474867 100%);
+  padding-bottom: 50px;
+}
+
+.main__contacts {
+  margin-bottom: 30px;
+}
+
+.left-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 224px;
+  min-height: 54px;
+  background-color: #9c9600;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 0 auto 20px;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 0;
+  padding: 0 30px;
+}
+
+.contacts-item {
+  height: 40px;
+  list-style: none;
+  padding-left: 60px;
+}
+
+.contacts-item__link {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  position: relative;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+  font-variant: small-caps;
+}
+
+.contacts-item__link::before {
+  position: absolute;
+  content: "";
+  left: -60px;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.telegram-link::before {
+  background-image: url("../images/telegram-logo.svg");
+}
+
+.github-link::before {
+  background-image: url("../images/github-logo.svg");
+}
+
+.mail-link::before {
+  background-image: url("../images/mail-logo.svg");
+}
+
+.main__skills {
+  margin-bottom: 30px;
+}
+
+.skills-list,
+.languages-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0 58px;
+}
+
+.main__right-column {
+  width: 603px;
+}
+
+.main__about {
+  padding-bottom: 46px;
+}
+
+.right-title {
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-height: 50px;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+  padding-left: 80px;
+}
+
+.right-title::before {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  content: "";
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-title::before {
+  background-image: url("../images/about-icon.svg");
+}
+
+.education-title::before {
+  background-image: url("../images/education-icon.svg");
+}
+
+.code-title::before {
+  background-image: url("../images/code-icon.svg");
+}
+
+.about-desc {
+  margin: 0 0 25px 0;
+}
+
+.about-subtitle {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+
+.about-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0 0 0 40px;
+}
+
+.main__education {
+  padding-bottom: 46px;
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+}
+
+.main__code {
+  position: relative;
+}
+
+.code-link {
+  position: absolute;
+  right: 30px;
+  transform: translateY(-50%);
+  display: block;
+}
+
+.code-example {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 15px;
+}
+
+.footer {
+  background-color: #6a6a6a;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  color: #ffffff;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.footer__github {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.github-desc {
+  padding-left: 15px;
+}
+
+.footer__copyright {
+  margin-left: 332px;
+}
+
+.footer__rs-logo__link {
+  margin-left: auto;
 }
