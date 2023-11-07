@@ -291,6 +291,10 @@ img {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 15px;
+  display: block;
+  overflow-x: auto;
+  background-color: rgb(47, 48, 67);
+  color: rgb(204, 204, 204);
 }
 
 .footer {
@@ -319,7 +323,6 @@ img {
 }
 
 .footer__github svg,
-.footer__rs-logo__link svg,
 .github-desc {
   transition: all 0.3s ease-in;
 }
@@ -329,7 +332,7 @@ img {
 }
 
 .footer__github:hover svg,
-.footer__rs-logo__link:hover svg {
+.footer__rs-logo__link:hover {
   transform: scale(1.1);
 }
 
@@ -344,4 +347,24 @@ img {
 
 .footer__rs-logo__link {
   margin-left: auto;
+  transition: all 0.3s ease-in;
 }
+
+.hljs-keyword {
+  color: rgb(204, 153, 204);
+}
+
+.hljs-title {
+  color: rgb(102, 153, 204);
+}
+
+.hljs-string {
+  color: rgb(153, 204, 153);
+}
+
+.hljs-built_in,
+.hljs-number,
+.hljs-params {
+  color: rgb(249, 145, 87);
+}
+
