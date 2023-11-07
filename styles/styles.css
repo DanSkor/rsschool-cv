@@ -105,7 +105,7 @@ img {
   min-height: 54px;
   background-color: #9c9600;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
@@ -124,14 +124,13 @@ img {
 .contacts-item {
   height: 40px;
   list-style: none;
-  padding-left: 60px;
 }
 
 .contacts-item__link {
+  position: relative;
   display: flex;
   align-items: center;
   height: 40px;
-  position: relative;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
@@ -145,23 +144,20 @@ img {
 .contacts-item__link::before {
   position: absolute;
   content: "";
-  left: -60px;
-  width: 40px;
-  height: 40px;
-  background-repeat: no-repeat;
-  background-position: center;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #9c9600;
+  transition: all 0.3s ease-in;
 }
 
-.telegram-link::before {
-  background-image: url("../images/telegram-logo.svg");
+.contacts-item__link:hover::before {
+  width: 100%;
 }
 
-.github-link::before {
-  background-image: url("../images/github-logo.svg");
-}
-
-.mail-link::before {
-  background-image: url("../images/mail-logo.svg");
+.contacts-img {
+  margin-right: 20px;
 }
 
 .main__skills {
@@ -266,6 +262,31 @@ img {
   display: block;
 }
 
+@keyframes code-active {
+  0% {
+    transform: translateY(-50%) scale(1);
+  }
+  20% {
+    transform: translateY(-50%) scale(1.1);
+  }
+  40% {
+    transform: translateY(-50%) scale(1.1) rotate(15deg);
+  }
+  60% {
+    transform: translateY(-50%) scale(1.1) rotate(-15deg);
+  }
+  80% {
+    transform: translateY(-50%) scale(1.1);
+  }
+  100% {
+    transform: translateY(-50%) scale(1);
+  }
+}
+
+.code-link:hover {
+  animation: code-active 2s linear infinite;
+}
+
 .code-example {
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -297,12 +318,28 @@ img {
   text-decoration: none;
 }
 
+.footer__github svg,
+.footer__rs-logo__link svg,
+.github-desc {
+  transition: all 0.3s ease-in;
+}
+
+.footer__github:hover .github-desc {
+  color: #9c9600;
+}
+
+.footer__github:hover svg,
+.footer__rs-logo__link:hover svg {
+  transform: scale(1.1);
+}
+
 .github-desc {
   padding-left: 15px;
 }
 
 .footer__copyright {
   margin-left: 332px;
+  font-size: 16px;
 }
 
 .footer__rs-logo__link {
